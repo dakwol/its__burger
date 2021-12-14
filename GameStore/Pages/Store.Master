@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.master.cs" Inherits="GameStore.Pages.Store" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>ITs BURGER</title>
+    <link rel="stylesheet" href="Content/Styles.css" />
+
+
+     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="google" content="notranslate"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content=""/>
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name=»viewport» content=»width=device-width, initial-scale=1.0”/>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link type="text/javascript" src="assets/js/scripts.js"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    
+    <!-- Добавляем тему по умолчанию из CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+    
+    <meta name="robots" content="index, follow"/>
+    <meta name="google" content="notranslate"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content=""/>
+     <%: System.Web.Optimization.Scripts.Render("~/bundles/validation") %>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="header">
+                <GS:CartSummary runat="server" />
+            
+            </div>
+              <!-- Main -->
+        <main class="main">
+            <div class="container">
+                
+                <div class="slick">
+                    <img class="slick__item" src="/Content/images/image 1.png">
+                    <img class="slick__item" src="/Content/images/image 2.png">
+                    <img class="slick__item" src="/Content/images/image 3.png">
+                    <img class="slick__item" src="/Content/images/image 2.png">
+                </div>
+                
+                
+            <div id="categories" class="category">
+                
+                    <GS:CategoryLinks runat="server" />
+                       
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="bodyContent" runat="server" />
+            </div>
+            </div>
+        </main>
+        </div>
+    </form>
+
+
+       <!-- JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/Content/js/app.js"></script>
+
+</body>
+</html>
